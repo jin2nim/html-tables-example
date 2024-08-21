@@ -4,104 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./style.css">
-    <title>css-float-examples</title>
+    <link rel="stylesheet" href="./sytle.css">
+
+    <title>html-tables-example</title>
 </head>
 <body>
-    <header>
-        <h1>
-            Float - Right
-        </h1>
-    </header>
-
-    <nav>
-        <a href="./index.html">
-            <picture>
-                <!-- SVG version for all scenarios due to scalability and efficiency -->
-                <source srcset="./logo/ECO_logo.svg" type="image/svg+xml" />
-                <!-- High resolution PNG for large screens -->
-                <source srcset="./logo/ECO_logo_big.png" media="(min-width: 1024px)" type="image/png" />
-                <!-- Small PNG for medium screens -->
-                <source srcset="./logo/ECO_logo_small.png" media="(min-width: 768px)" type="image/png" />
-                <!-- High resolution JPG for small screens (lower priority than PNG) -->
-                <source srcset="./logo/ECO_logo_big.jpg" media="(min-width: 480px)" type="image/jpg" />
-                <!-- Fallback small JPG for all other scenarios or if none of the above are supported -->
-                <img src="./logo/ECO_logo_small.jpg" alt="ECO company logo">
-            </picture>
-        </a>
-        <!-- <picture>
-            <a href="./index.html">
-                <img src="./logo/ECO_logo_small.jpg" alt="ECO company logo">
-            </a>
-        </picture> -->
-        <span class="spacer"></span>
-        <ul>
-            <li><a href="#" class="active">Float-Right</a></li>
-            <li><a href="./float-left.html">Float-Left</a></li>
-            <li class="last-item"><a href="./clear-both.html">Clear-Both</a></li>
-        </ul>
-    </nav>
-
+    <h1>Semester Ⅱ schedule</h1>
+    <div class="schedule">
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th colspan="2">Time</th>
+                    <th>Room</th>
+                    <th>Day</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2">English Ⅱ</th>
+                    <td>9&#58;00</td>
+                    <td>11&#58;00</td>
+                    <td>L2201</td>
+                    <td>Monday</td>
+                </tr>
+                <tr>
+                    <td>9&#58;00</td>
+                    <td>11&#58;00</td>
+                    <td>L2201</td>
+                    <td>Wednesday</td>
+                </tr>
+                <tr>
+                    <th>Geography</th>
+                    <td>11&#58;00</td>
+                    <td>12&#58;45</td>
+                    <td>G107</td>
+                    <td>Tuesday</td>
+                </tr>
+                <tr>
+                    <th>Biology</th>
+                    <td>9&#58;00</td>
+                    <td>11&#58;00</td>
+                    <td>B302</td>
+                    <td>Friday</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        
+    <h1>Product Comparison Chart</h1>
+    <div class="product">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Product A</th>
+                    <th>Product B</th>
+                    <th>Product C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Durability</th>
+                    <td>10/10</td>
+                    <td>5/10</td>
+                    <td>7/10</td>
+                </tr>
+                <tr>
+                    <th>Design</th>
+                    <td>3/10</td>
+                    <td>8/10</td>
+                    <td>7/10</td>
+                </tr>
+                <tr>
+                    <th>Usability</th>
+                    <td>7/10</td>
+                    <td>10/10</td>
+                    <td>5/10</td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td>9/10</td>
+                    <td>7/10</td>
+                    <td>3/10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     
-    <main>
-        <article>
-            <div class="float-right image-wrap">
-                <picture>
-                    <source srcset="./imgs/kim-green-hamster_big.jpg" type="image/jpg">
-                    <img src="./imgs/kim-green-hamster_small.jpg" alt="rat">
-                </picture>
-            </div>
-            <div class="text-box">
-                <h2>Example of Float Right</h2>
-                <p class="post-info">
-                    Published Aug 19th, 2024 at 5:30 PM.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Duis ultricies purus id ante mollis dapibus. 
-                    Vestibulum euismod eget neque at dignissim. 
-                    Suspendisse rhoncus porta neque, pharetra viverra turpis volutpat eu. 
-                    Proin vel nibh imperdiet, faucibus sapien et, finibus turpis. 
-                    Nam vulputate mattis gravida. 
-                    Duis in vulputate est, ut ullamcorper metus. 
-                    Quisque elementum rhoncus interdum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Duis ultricies purus id ante mollis dapibus. 
-                    Vestibulum euismod eget neque at dignissim. 
-                    Suspendisse rhoncus porta neque, pharetra viverra turpis volutpat eu. 
-                    Proin vel nibh imperdiet, faucibus sapien et, finibus turpis. 
-                    Nam vulputate mattis gravida. 
-                    Duis in vulputate est, ut ullamcorper metus. 
-                    Quisque elementum rhoncus interdum.
-                </p>
-                <p class="last-item">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Duis ultricies purus id ante mollis dapibus. 
-                    Vestibulum euismod eget neque at dignissim. 
-                    Suspendisse rhoncus porta neque, pharetra viverra turpis volutpat eu. 
-                    Proin vel nibh imperdiet, faucibus sapien et, finibus turpis. 
-                    Nam vulputate mattis gravida. 
-                    Duis in vulputate est, ut ullamcorper metus. 
-                    Quisque elementum rhoncus interdum.
-                </p>
-            </div>
-        </article>
-    </main>
-
+    <div class="size-guide">
+        <h1>SIZE GUIDE</h1>
+        <table>
+            <tr>
+                <th>Bed Sizes</th>
+                <th>Pet Weight</th>
+                <th>Examples of Breeds</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/s-size.png" alt="S SIZE" class="size">
+                    25&#34;&#120;19&#34;&#120;3&#46;5&#34;
+                </td>
+                <td>up to 20lbs</td>
+                <td class="dog">
+                    <img src="./img/dog1.png" alt="s-one" class="content-img">
+                    <img src="./img/dog4.png" alt="s-two" class="content-img">
+                    <img src="./img/dog3.png" alt="s-three" class="content-img">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/m-size.png" alt="M SIZE" class="size">
+                    31&#34;&#120;22&#34;&#120;3&#46;5&#34;
+                </td>
+                <td>up to 40lbs</td>
+                <td class="dog">
+                    <img src="./img/dog4.png" alt="m-one" class="content-img">
+                    <img src="./img/dog5.png" alt="m-two" class="content-img">
+                    <img src="./img/dog1.png" alt="m-three" class="content-img">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/l-size.png" alt="L SIZE" class="size">
+                    37&#34;&#120;26&#34;&#120;3&#46;5&#34;
+                </td>
+                <td>up to 65lbs</td>
+                <td class="dog">
+                    <img src="./img/dog1.png" alt="l-one" class="content-img">
+                    <img src="./img/dog3.png" alt="l-two" class="content-img">
+                    <img src="./img/dog4.png" alt="l-three" class="content-img">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./img/xl-size.png" alt="XL SIZE" class="size">
+                    43&#34;&#120;30&#34;&#120;3&#46;5&#34;
+                </td>
+                <td>up to 90lbs</td>
+                <td class="dog">
+                    <img src="./img/dog5.png" alt="xl-one" class="content-img">
+                    <img src="./img/dog3.png" alt="xl-two" class="content-img">
+                    <img src="./img/dog1.png" alt="xl-three" class="content-img">
+                </td>
+            </tr>
+        </table>
+    </div>
     
-    <footer>
-        <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li class="last-item"><a href="#">Cookies</a></li>
-        </ul>
-        <hr/>
-        <p>
-            &#169; 2024 My Website
-        </p>
-    </footer>
 </body>
 </html>
